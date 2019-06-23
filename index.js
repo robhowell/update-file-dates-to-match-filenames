@@ -21,8 +21,8 @@ glob(`${folderPath}/**/*.jpg`, {}, function(er, files) {
     try {
       fileDescriptor = fs.openSync(filePath, "r");
       const fileStats = fs.fstatSync(fileDescriptor);
-      const buffer = fs.readFileSync(filePath);
-      const exifData = exif.fromBuffer(buffer);
+      // const buffer = fs.readFileSync(filePath);
+      // const exifData = exif.fromBuffer(buffer);
 
       // JSON.stringify(exifData) === "{}" ||
       // exifData.DateTime === undefined
